@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Countries from './Components/Countries/Countries'
 import Counter from './Counter'
 import Team from './Team'
 import Users from './Users'
 
 function App() {
-  const [count, setCount] = useState(0)
-  function handleClickMe(params) {
+  function handleClickMe() {
     alert('clicked')
   }
 
@@ -18,6 +14,7 @@ function App() {
   return (
     <>
       <h1>React Core Concepts</h1>
+      <Countries></Countries>
 
       <Users></Users>
 
